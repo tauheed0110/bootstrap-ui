@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Image Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <!-- creating header -->
+        <section id="header">
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Complex UI</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Section 1</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Section 2</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link">Section 3</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+            </section>
+        <!-- creating carousal -->
+        <section id="carousal">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://c4.wallpaperflare.com/wallpaper/314/561/208/5bd28efa2eb6a-wallpaper-thumb.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+
+        <!-- create another section which will include cards grid -->
+        <section style="width: 80%; margin: auto;">
+            <section id="shortcards">
+                <div class="row my-5 ">
+                    <div class="card col-lg-4 col-md-6 col-sm-12 mb-2">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text text-center">Short description</p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-4 col-md-6 col-sm-12 mb-2">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text text-center">Short description</p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-4 col-md-6 col-sm-12">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text text-center">Short description</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+            <!-- creating section for grid -->
+            <section id="grid">
+                <div class="container">
+                    <div class="row mb-2">
+                        <div class="col-4">
+                            <img src="https://via.placeholder.com/300x200" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="col-8">
+                            <div class="row mb-2">
+                                <div class="col-2">
+                                    <img src="https://via.placeholder.com/300x200" alt="" width="100%" height="100%">
+                                </div>
+                                <div class="col-2">
+                                    <img src="https://via.placeholder.com/300x200" alt="" width="100%" height="100%">
+                                </div>
+                                <div class="col-6">
+                                    <img src="https://via.placeholder.com/300x200" alt="" width="100%" height="100%">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="https://via.placeholder.com/300x200" alt="" width="100%" height="100%">
+                                </div>
+                                <div class="col-2">
+                                    <img src="https://via.placeholder.com/300x200" alt="" width="100%" height="100%">
+                                </div>
+                                <div class="col-6">
+                                    <img src="https://via.placeholder.com/300x200" alt="" width="100%" height="100%">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="https://via.placeholder.com/300x200" alt=""  width="100%" height="100%">
+                        </div>
+                        <div class="col-6">
+                            <img src="https://via.placeholder.com/300x200" alt=""  width="100%" height="100%">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="card-holder">
+                <div class="row my-5 justify-content-between">
+                    <div class="card col-lg-4 col-sm-12 mb-2" style="width: 18rem;">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card col-lg-4 col-sm-12 mb-2" style="width: 18rem;">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card col-lg-4 col-sm-12" style="width: 18rem;">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- creating footer -->
+        <section id="footer">
+            <div class="row text-decoration-none">
+                <div class="col-lg-4 col-sm-12 text-center">
+                    <h3>Useful links</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none">Link 1</a></li>
+                        <li><a href="#" class="text-decoration-none">Link 2</a></li>
+                        <li><a href="#" class="text-decoration-none">Link 3</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-sm-12 text-center">
+                    <h3>More links</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none">Link 1</a></li>
+                        <li><a href="#" class="text-decoration-none">Link 2</a></li>
+                        <li><a href="#" class="text-decoration-none">Link 3</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-sm-12 text-center">
+                    <h3>Contact us</h3>
+                    <p>Email: tauheed0110@gmail.com</p>
+                    <p>phone: 9161056365</p>
+                </div>
+            </div>
+            <div class="d-flex flex-wrap justify-content-between p-3">
+                <p>&copy; 2024 Complex UI. All right reserved.</p>
+                <button type="button" class="btn btn-primary">Back To Top</button>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>
